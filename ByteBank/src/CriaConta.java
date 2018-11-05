@@ -4,7 +4,7 @@ public class CriaConta {
 
         Cliente gabriela = new Cliente();
         gabriela.setNome("Gabriela Rayssa");
-        gabriela.setCpf("058.564.871-92");
+        gabriela.setCpf("222.222.222-90");
         gabriela.setProfissao("Desenvolvedora Web e Mobile");
 
         Conta conta =  new Conta(34, 8989898);
