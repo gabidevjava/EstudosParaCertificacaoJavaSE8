@@ -11,11 +11,12 @@ public class TesteFuncionario {
         System.out.println(funcionario.getSalario());
         System.out.println(funcionario.getbonificacao());
 
-        FuncionarioTeste funcionarioTeste = new FuncionarioTeste();
+        Funcionario gerente = new Gerente();
 
-        funcionarioTeste.setSalario(10000);
-        System.out.println(funcionarioTeste.getTipo());
-        System.out.println(funcionarioTeste.getbonificacao());
+        gerente.setNome("Gabriela");
+        String nome = gerente.getNome();
+
+        System.out.println(nome);
 
     }
 }
