@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85727425-7411-4d6f-a975-6490ba509897" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ControleBonificacao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ByteBank/src/ContaCorrente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ByteBank/src/ContaPoupanca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ByteBank/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ByteBank/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ByteBank/src/CriaConta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ByteBank/src/CriaConta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gerente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gerente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TesteFuncionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TesteFuncionario.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,13 +28,14 @@
     <session id="-1201346724">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -48,23 +50,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="822" />
+          <entry key="java" value="824" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="822" />
+          <entry key="JAVA" value="824" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Funcionario.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+            <state relative-caret-position="345">
+              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               <folding>
                 <element signature="e#175#176#0" expanded="true" />
                 <element signature="e#217#218#0" expanded="true" />
@@ -79,16 +81,12 @@
         <entry file="file://$PROJECT_DIR$/src/Gerente.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="42" lean-forward="true" selection-start-column="42" selection-end-column="42" />
-              <folding>
-                <element signature="e#294#295#0" expanded="true" />
-                <element signature="e#360#361#0" expanded="true" />
-              </folding>
+              <caret column="42" selection-start-column="42" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TesteFuncionario.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
@@ -102,12 +100,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
               <caret line="3" selection-start-line="3" selection-end-line="3" />
-              <folding>
-                <element signature="e#230#231#0" expanded="true" />
-                <element signature="e#257#258#0" expanded="true" />
-                <element signature="e#297#298#0" expanded="true" />
-                <element signature="e#329#330#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -135,10 +127,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/FuncionarioTeste.java" />
-        <option value="$PROJECT_DIR$/src/Funcionario.java" />
         <option value="$PROJECT_DIR$/src/Gerente.java" />
         <option value="$PROJECT_DIR$/src/TesteFuncionario.java" />
         <option value="$PROJECT_DIR$/src/ControleBonificacao.java" />
+        <option value="$PROJECT_DIR$/src/Funcionario.java" />
       </list>
     </option>
   </component>
@@ -153,6 +145,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -169,13 +162,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542843267623" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542844077136" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ByteBank" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -220,7 +212,7 @@
     <frame x="0" y="30" width="1366" height="738" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21200608" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21580547" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -229,12 +221,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2956081" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2956081" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.19256757" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.19256757" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -254,8 +246,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Funcionario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        <state relative-caret-position="345">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding>
             <element signature="e#175#176#0" expanded="true" />
             <element signature="e#217#218#0" expanded="true" />
@@ -268,24 +260,7 @@
     <entry file="file://$PROJECT_DIR$/src/Gerente.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="42" lean-forward="true" selection-start-column="42" selection-end-column="42" />
-          <folding>
-            <element signature="e#294#295#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ControleBonificacao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#230#231#0" expanded="true" />
-            <element signature="e#257#258#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-          </folding>
+          <caret column="42" selection-start-column="42" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -293,6 +268,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ControleBonificacao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

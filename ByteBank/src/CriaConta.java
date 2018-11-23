@@ -2,12 +2,16 @@ public class CriaConta {
 
     public static void main(String[] args) {
 
-        Cliente gabriela = new Cliente();
-        gabriela.setNome("Gabriela Rayssa");
-        gabriela.setCpf("222.222.222-90");
-        gabriela.setProfissao("Desenvolvedora Web e Mobile");
+        ContaCorrente contaCorrente = new ContaCorrente(111,111);
+        contaCorrente.deposita(900);
 
-        Conta conta =  new Conta(34, 8989898);
+        ContaPoupanca contaPoupanca = new ContaPoupanca(900, 500);
+        contaPoupanca.deposita(124.90);
+
+        contaCorrente.transfere(100, contaPoupanca);
+        System.out.println("Conta corrente: " + contaCorrente.getSaldo());
+        System.out.println("Conta poupança: " + contaPoupanca.getSaldo());
+
 
     }
 }
