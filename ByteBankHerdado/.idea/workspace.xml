@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85727425-7411-4d6f-a975-6490ba509897" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ByteBank/src/ContaCorrente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ByteBank/src/ContaPoupanca.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ByteBank/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ByteBank/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ByteBank/src/CriaConta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ByteBank/src/CriaConta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,14 +25,15 @@
     <session id="-1201346724">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.39" value="1" />
+          <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -145,6 +143,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -162,12 +161,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542844077136" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ByteBank" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -212,7 +210,7 @@
     <frame x="0" y="30" width="1366" height="738" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21580547" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21960486" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
