@@ -7,9 +7,7 @@ public abstract class Funcionario {
     public Funcionario() {
     }
 
-    public double getbonificacao() {
-        return this.salario * 0.05;
-    }
+    public abstract double getbonificacao();
 
     public String getNome() {
         return nome;
