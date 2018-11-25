@@ -4,7 +4,6 @@ public abstract class Funcionario {
     private String cpf;
     private double salario;
 
-
     public Funcionario() {
     }
 
