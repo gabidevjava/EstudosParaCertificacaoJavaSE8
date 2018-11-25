@@ -3,15 +3,15 @@ public class CriaConta {
     public static void main(String[] args) {
 
         ContaCorrente contaCorrente = new ContaCorrente(111,111);
-        contaCorrente.deposita(900);
+        contaCorrente.deposita(100.0);
 
-        ContaPoupanca contaPoupanca = new ContaPoupanca(900, 500);
-        contaPoupanca.deposita(124.90);
+        SeguroDeVida seguroDeVida = new SeguroDeVida();
+        CalculadorImposto calculadorImposto = new CalculadorImposto();
 
-        contaCorrente.transfere(100, contaPoupanca);
-        System.out.println("Conta corrente: " + contaCorrente.getSaldo());
-        System.out.println("Conta poupança: " + contaPoupanca.getSaldo());
+        calculadorImposto.registrar(contaCorrente);
+        calculadorImposto.registrar(seguroDeVida);
 
+        System.out.println(calculadorImposto.getTotalImposto());
 
     }
 }

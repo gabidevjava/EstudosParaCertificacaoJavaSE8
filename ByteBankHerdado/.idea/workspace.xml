@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85727425-7411-4d6f-a975-6490ba509897" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AutenticacaoUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ByteBankHerdado/Administrador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ByteBankHerdado/Administrador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ByteBankHerdado/FuncionarioAutenticavel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ByteBankHerdado/Gerente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ByteBankHerdado/Gerente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ByteBankHerdado/SistemaInterno.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ByteBankHerdado/SistemaInterno.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ByteBankHerdado/TesteSistema.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ByteBankHerdado/TesteSistema.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Administrador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gerente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gerente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TesteSistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TesteSistema.java" afterDir="false" />
-    </list>
+    <list default="true" id="85727425-7411-4d6f-a975-6490ba509897" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +22,7 @@
     <session id="-1201346724">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.3" value="1" />
@@ -70,11 +58,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Funcionario.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="e#224#225#0" expanded="true" />
                 <element signature="e#251#252#0" expanded="true" />
@@ -126,8 +114,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Gerente.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+            <state relative-caret-position="322">
+              <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
               <folding>
                 <element signature="e#136#137#0" expanded="true" />
                 <element signature="e#197#198#0" expanded="true" />
@@ -142,14 +130,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Administrador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+            <state relative-caret-position="506">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="e#153#154#0" expanded="true" />
                 <element signature="e#214#215#0" expanded="true" />
+                <element signature="e#100#101#0" expanded="true" />
                 <element signature="e#125#126#0" expanded="true" />
                 <element signature="e#350#351#0" expanded="true" />
                 <element signature="e#402#403#0" expanded="true" />
@@ -186,7 +175,6 @@
         <option value="$PROJECT_DIR$/src/ControleBonificacao.java" />
         <option value="$PROJECT_DIR$/src/TesteFuncionario.java" />
         <option value="$PROJECT_DIR$/src/EditorVideo.java" />
-        <option value="$PROJECT_DIR$/src/Funcionario.java" />
         <option value="$PROJECT_DIR$/src/FuncionarioAutenticavel.java" />
         <option value="$PROJECT_DIR$/src/SistemaInterno.java" />
         <option value="$PROJECT_DIR$/src/Autenticavel.java" />
@@ -195,6 +183,7 @@
         <option value="$PROJECT_DIR$/src/Cliente.java" />
         <option value="$PROJECT_DIR$/src/Gerente.java" />
         <option value="$PROJECT_DIR$/src/Administrador.java" />
+        <option value="$PROJECT_DIR$/src/Funcionario.java" />
       </list>
     </option>
   </component>
@@ -230,8 +219,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543166109023" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543166502461" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ByteBank" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -286,7 +275,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1366" height="738" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22340426" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -297,12 +285,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19763513" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19763513" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.25675675" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.25675675" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -368,27 +356,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Funcionario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AutenticacaoUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -396,23 +363,6 @@
           <folding>
             <element signature="e#88#89#0" expanded="true" />
             <element signature="e#122#123#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Gerente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
-          <folding>
-            <element signature="e#136#137#0" expanded="true" />
-            <element signature="e#197#198#0" expanded="true" />
-            <element signature="e#112#113#0" expanded="true" />
-            <element signature="e#153#154#0" expanded="true" />
-            <element signature="e#220#221#0" expanded="true" />
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#390#391#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -434,16 +384,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Administrador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        <state relative-caret-position="506">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="e#153#154#0" expanded="true" />
             <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#100#101#0" expanded="true" />
             <element signature="e#125#126#0" expanded="true" />
             <element signature="e#350#351#0" expanded="true" />
             <element signature="e#402#403#0" expanded="true" />
             <element signature="e#459#460#0" expanded="true" />
             <element signature="e#520#521#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gerente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+          <folding>
+            <element signature="e#136#137#0" expanded="true" />
+            <element signature="e#197#198#0" expanded="true" />
+            <element signature="e#112#113#0" expanded="true" />
+            <element signature="e#153#154#0" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#272#273#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Funcionario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#291#292#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+            <element signature="e#557#558#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
           </folding>
         </state>
       </provider>
