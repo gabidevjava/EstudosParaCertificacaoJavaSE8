@@ -10,8 +10,10 @@ public class Fluxo {
         System.out.println("Ini do metodo1");
         try {
             metodo2();
-        } catch(ArithmeticException ex) {
-            System.out.println("Arithmetic exception deuuuu");
+        } catch(ArithmeticException | NullPointerException ex) {
+            String msg = ex.getMessage();
+            System.out.println("Exception " + msg);
+            ex.printStackTrace();
         }
         System.out.println("Fim do metodo1");
     }
