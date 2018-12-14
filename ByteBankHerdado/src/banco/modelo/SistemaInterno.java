@@ -1,3 +1,5 @@
+package banco.modelo;
+
 public class SistemaInterno {
 
     private int senha = 2222;

@@ -1,3 +1,5 @@
+package banco.modelo;
+
 public abstract class Funcionario {
 
     private String nome;

@@ -1,3 +1,10 @@
+package teste;
+
+import banco.modelo.Administrador;
+import banco.modelo.Cliente;
+import banco.modelo.Gerente;
+import banco.modelo.SistemaInterno;
+
 public class TesteSistema {
 
     public static void main(String[] args) {

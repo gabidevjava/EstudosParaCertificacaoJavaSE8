@@ -1,3 +1,8 @@
+package teste;
+
+import banco.modelo.ControleBonificacao;
+import banco.modelo.Gerente;
+
 public class TesteFuncionario {
 
     public static void main(String[] args) {

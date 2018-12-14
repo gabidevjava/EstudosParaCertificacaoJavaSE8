@@ -1,3 +1,5 @@
+package banco.modelo;
+
 public class Administrador extends Funcionario implements Autenticavel {
 
     private AutenticacaoUtil autenticacaoUtil;
