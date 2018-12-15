@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85727425-7411-4d6f-a975-6490ba509897" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/banco/modelo/Administrador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AutenticacaoUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/banco/modelo/AutenticacaoUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Autenticavel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/banco/modelo/Autenticavel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/banco/modelo/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ControleBonificacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/banco/modelo/ControleBonificacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EditorVideo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/banco/modelo/EditorVideo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/banco/modelo/Funcionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gerente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/banco/modelo/Gerente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SistemaInterno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/banco/modelo/SistemaInterno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TesteFuncionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/teste/TesteFuncionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TesteSistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/teste/TesteSistema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaPilha/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaPilha/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="85727425-7411-4d6f-a975-6490ba509897" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +58,7 @@
     <session id="1478376572">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.opened" value="2" />
@@ -95,8 +81,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/teste/TesteFuncionario.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="230">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -178,8 +164,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544821688953" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544823385268" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ByteBank" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -346,8 +332,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/teste/TesteFuncionario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="230">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
