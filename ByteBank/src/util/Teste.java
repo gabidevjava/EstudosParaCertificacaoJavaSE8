@@ -9,7 +9,8 @@ public class Teste {
 
     public static void main(String[] args) {
 
-        ArrayList lista = new ArrayList();
+        // generics
+        ArrayList<Conta> lista = new ArrayList<Conta>();
 
         ContaCorrente cc = new ContaCorrente(11, 22);
         lista.add(cc);
@@ -17,7 +18,7 @@ public class Teste {
         lista.add(cc1);
         System.out.println(lista.size());
 
-        Conta ref = (Conta) lista.get(0);
+        Conta ref =  lista.get(0);
         System.out.println(ref.getNumero());
 
         for (int i = 0; i < lista.size(); i++) {
