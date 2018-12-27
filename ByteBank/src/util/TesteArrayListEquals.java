@@ -4,13 +4,14 @@ import modelo.Conta;
 import modelo.ContaCorrente;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class TesteArrayListEquals {
 
     public static void main(String[] args) {
 
         // generics
-        ArrayList<Conta> lista = new ArrayList<Conta>();
+        LinkedList<Conta> lista = new LinkedList<Conta>();
 
         ContaCorrente cc = new ContaCorrente(11, 22);
         lista.add(cc);
