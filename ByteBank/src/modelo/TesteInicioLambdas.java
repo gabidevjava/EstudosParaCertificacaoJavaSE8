@@ -26,12 +26,7 @@ public class TesteInicioLambdas {
         lista.add(cc3);
         lista.add(cc4);
 
-        lista.sort(new Comparator<Conta>() { //classe anonima
-            @Override
-            public int compare(Conta c1, Conta c2) {
-                return Integer.compare(c1.getNumero(), c2.getNumero());
-            }
-        });
+        lista.sort((Conta c1, Conta c2) -> Integer.compare(c1.getNumero(), c2.getNumero()));
 
     }
 
