@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="065eb6ec-5acc-4706-82c0-cdf1d7f6851a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/TesteCopiarArquivo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TesteEscrita2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lorem.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lorem.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TesteEscrita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TesteEscrita.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,25 +25,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="3" />
-          <entry key="txt" value="15" />
+          <entry key="java" value="4" />
+          <entry key="txt" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="3" />
-          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="JAVA" value="4" />
+          <entry key="PLAIN_TEXT" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="560" />
+          <entry key="java" value="720" />
           <entry key="txt" value="43" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="560" />
+          <entry key="JAVA" value="720" />
           <entry key="PLAIN_TEXT" value="43" />
         </counts>
       </usages-collector>
@@ -52,32 +51,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TesteLeitura.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="11" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TesteEscrita.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/TesteCopiarArquivo.java">
+        <entry file="file://$PROJECT_DIR$/src/TesteEscrita2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="9" column="52" lean-forward="true" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+            <state relative-caret-position="131">
+              <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lorem2.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lorem.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -108,6 +100,7 @@
         <option value="$PROJECT_DIR$/src/TesteEscrita.java" />
         <option value="$PROJECT_DIR$/lorem.txt" />
         <option value="$PROJECT_DIR$/src/TesteCopiarArquivo.java" />
+        <option value="$PROJECT_DIR$/src/TesteEscrita2.java" />
       </list>
     </option>
   </component>
@@ -143,7 +136,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546475896741" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546477876408" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -165,7 +158,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TesteCopiarArquivo">
+  <component name="RunManager" selected="Application.TesteEscrita2">
     <configuration name="TesteCopiarArquivo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TesteCopiarArquivo" />
       <module name="JavaIO" />
@@ -175,6 +168,13 @@
     </configuration>
     <configuration name="TesteEscrita" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TesteEscrita" />
+      <module name="JavaIO" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TesteEscrita2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TesteEscrita2" />
       <module name="JavaIO" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -191,9 +191,11 @@
       <item itemvalue="Application.TesteLeitura" />
       <item itemvalue="Application.TesteEscrita" />
       <item itemvalue="Application.TesteCopiarArquivo" />
+      <item itemvalue="Application.TesteEscrita2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TesteEscrita2" />
         <item itemvalue="Application.TesteCopiarArquivo" />
         <item itemvalue="Application.TesteEscrita" />
         <item itemvalue="Application.TesteLeitura" />
@@ -226,12 +228,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2837838" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22972973" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.1891892" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.2027027" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -266,6 +268,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/TesteCopiarArquivo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="9" column="52" lean-forward="true" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lorem2.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -276,10 +285,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TesteCopiarArquivo.java">
+    <entry file="file://$PROJECT_DIR$/src/TesteEscrita2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="9" column="52" lean-forward="true" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+        <state relative-caret-position="131">
+          <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
         </state>
       </provider>
     </entry>
