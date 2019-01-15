@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="065eb6ec-5acc-4706-82c0-cdf1d7f6851a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/contas.csv" beforeDir="false" afterPath="$PROJECT_DIR$/contas.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TesteUnicodeEEncoding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TesteUnicodeEEncoding.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TesteSerializacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,27 +27,28 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="bin" value="1" />
           <entry key="csv" value="3" />
-          <entry key="java" value="20" />
+          <entry key="java" value="21" />
           <entry key="txt" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="20" />
-          <entry key="PLAIN_TEXT" value="21" />
+          <entry key="JAVA" value="21" />
+          <entry key="PLAIN_TEXT" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="csv" value="8" />
-          <entry key="java" value="1646" />
+          <entry key="java" value="1891" />
           <entry key="txt" value="43" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1646" />
+          <entry key="JAVA" value="1891" />
           <entry key="PLAIN_TEXT" value="51" />
         </counts>
       </usages-collector>
@@ -55,14 +56,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TesteLeituraCSV.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="230">
-              <caret line="13" column="50" lean-forward="true" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
+              <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/TesteSerializacao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -104,6 +114,7 @@
         <option value="$PROJECT_DIR$/src/TesteLeituraCSV.java" />
         <option value="$PROJECT_DIR$/src/TesteUnicodeEEncoding.java" />
         <option value="$PROJECT_DIR$/contas.csv" />
+        <option value="$PROJECT_DIR$/src/TesteSerializacao.java" />
       </list>
     </option>
   </component>
@@ -139,7 +150,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547389002298" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547512351211" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -161,16 +172,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TesteLeituraCSV">
+  <component name="RunManager" selected="Application.TesteSerializacao">
     <configuration name="TesteCopiarArquivo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TesteCopiarArquivo" />
-      <module name="JavaIO" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TesteEscrita2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TesteEscrita2" />
       <module name="JavaIO" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -190,6 +194,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TesteSerializacao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TesteSerializacao" />
+      <module name="JavaIO" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TesteUnicodeEEncoding" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TesteUnicodeEEncoding" />
       <module name="JavaIO" />
@@ -199,18 +210,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.TesteCopiarArquivo" />
-      <item itemvalue="Application.TesteEscrita2" />
       <item itemvalue="Application.TesteEscrita3" />
       <item itemvalue="Application.TesteLeituraCSV" />
       <item itemvalue="Application.TesteUnicodeEEncoding" />
+      <item itemvalue="Application.TesteSerializacao" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TesteSerializacao" />
         <item itemvalue="Application.TesteLeituraCSV" />
         <item itemvalue="Application.TesteUnicodeEEncoding" />
         <item itemvalue="Application.TesteCopiarArquivo" />
         <item itemvalue="Application.TesteEscrita3" />
-        <item itemvalue="Application.TesteEscrita2" />
       </list>
     </recent_temporary>
   </component>
@@ -335,10 +346,20 @@
     <entry file="file://$PROJECT_DIR$/src/TesteLeituraCSV.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="13" column="50" lean-forward="true" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
+          <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/objeto.bin">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TesteSerializacao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
