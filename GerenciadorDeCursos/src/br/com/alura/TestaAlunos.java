@@ -1,21 +1,19 @@
 package br.com.alura;
 
-import java.util.Collection;
-import java.util.HashSet;
-
 public class TestaAlunos {
 
     public static void main(String[] args) {
 
-        Collection<String> alunos = new HashSet<>();
-        alunos.add("Gabriela Guedes");
-        alunos.add("Guedes Rayssa");
+        Curso javaColecoes = new Curso("Dominando as coleções", "Gabriela Guedes");
 
-        for (String aluno: alunos) {
-            System.out.println(aluno);
-        }
+        javaColecoes.adiona(new Aula("Dominando map e filter", 30));
+        javaColecoes.adiona(new Aula("A Foco na certificação", 20));
+        javaColecoes.adiona(new Aula("B Java/JavaScript", 40));
 
-        System.out.println(alunos);
+        Aluno aluno1 = new Aluno("Gabriela Guedes", 1298085);
+        javaColecoes.matricula(aluno1);
+
+        javaColecoes.getAlunos().forEach(a -> System.out.println(a));
 
     }
 
