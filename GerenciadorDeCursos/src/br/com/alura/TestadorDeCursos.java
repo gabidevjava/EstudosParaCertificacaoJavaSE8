@@ -1,8 +1,6 @@
 package br.com.alura;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class TestadorDeCursos {
 
@@ -19,9 +17,17 @@ public class TestadorDeCursos {
 
         List<Aula> aulas = new ArrayList<>(aulasImutaveis);
 
-        Collections.sort(aulas);
-        System.out.println(aulas);
-        System.out.println("A duração de todos os cursos é: " + javaColecoes.getTempoTotal());
+        Set<Aluno> alunos = javaColecoes.getAlunos();
+        Iterator<Aluno> iterator = alunos.iterator();
+
+        while (iterator.hasNext()) {
+            Aluno proximo = iterator.next();
+            System.out.println(proximo);
+        }
+
+//        Collections.sort(aulas);
+//        System.out.println(aulas);
+//        System.out.println("A duração de todos os cursos é: " + javaColecoes.getTempoTotal());
 
     }
 
