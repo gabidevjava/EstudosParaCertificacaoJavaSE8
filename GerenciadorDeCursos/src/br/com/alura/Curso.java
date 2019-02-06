@@ -47,4 +47,12 @@ public class Curso {
         return this.alunos.contains(aluno);
     }
 
+    public Aluno buscaMatriculado(int numero) {
+        for (Aluno aluno: alunos) {
+            if(aluno.getNumeroMatricula() == numero) {
+                return aluno;
+            }
+        }
+        throw new NoSuchElementException("Matrícula não encontrada!");
+    }
 }
