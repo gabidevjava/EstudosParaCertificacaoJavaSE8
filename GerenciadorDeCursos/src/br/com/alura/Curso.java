@@ -8,9 +8,11 @@ public class Curso {
     private String instrutor;
     private List<Aula> aulas = new LinkedList<>();
     private Set<Aluno> alunos = new HashSet<>();
+    private Map<Integer, Aluno> matriculaParaAluno = new HashMap<>();
 
     public void matricula(Aluno aluno) {
         this.alunos.add(aluno);
+        this.matriculaParaAluno.put(aluno.getNumeroMatricula(), aluno);
     }
 
     public Curso(String nome, String instrutor) {
@@ -48,11 +50,6 @@ public class Curso {
     }
 
     public Aluno buscaMatriculado(int numero) {
-        for (Aluno aluno: alunos) {
-            if(aluno.getNumeroMatricula() == numero) {
-                return aluno;
-            }
-        }
-        throw new NoSuchElementException("Matrícula não encontrada!");
+        return matriculaParaAluno.get(numero);
     }
 }
