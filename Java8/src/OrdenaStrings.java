@@ -12,17 +12,15 @@ public class OrdenaStrings {
         palavras.add("Estudo muito java");
 
         Collections.sort(palavras);
-        System.out.println(palavras);
+        //System.out.println(palavras);
+
+        palavras.sort((s1, s2) -> Integer.compare(s1.length(), s2.length()));
+
+
+        palavras.forEach(s -> System.out.println(s));
 
     }
 
 }
 
-class comparadorPorTamanho implements Comparable<String> {
 
-    @Override
-    public int compareTo(String s) {
-        return 0;
-    }
-
-}
