@@ -6,12 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="guedessoft" />
+        <module name="GuedeSoft" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="guedessoft" target="1.7" />
-      <module name="produtos" target="1.7" />
+      <module name="GuedeSoft" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

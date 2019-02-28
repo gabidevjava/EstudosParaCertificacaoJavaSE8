@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../GuedeSoft/guedessoft.iml" filepath="$PROJECT_DIR$/../GuedeSoft/guedessoft.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GuedeSoft.iml" filepath="$PROJECT_DIR$/GuedeSoft.iml" />
     </modules>
   </component>
 </project>
