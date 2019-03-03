@@ -1,0 +1,10 @@
+echo -e '[Desktop Entry]
+Name=Eclipse
+Type=Application
+Exec=/home/azooiverde/eclipse/eclipse
+Terminal=false
+Icon=/home/azooiverde/eclipse/icon.xpm
+Comment=Integrated Development Environment
+NoDisplay=false
+Categories=Development;IDE;
+Name[en]=Eclipse' | sudo tee /usr/share/applications/eclipse.desktop
