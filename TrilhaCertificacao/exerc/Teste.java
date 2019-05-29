@@ -861,7 +861,32 @@ public class Test {
 
 -------------------------------------------------------------------------------------------------
 
+-----------------------IMPORTANTE--------------------------------------------
 
+Observe que as strings calculadas pela concatenação em tempo de compilação são referidas pelo pool de strings. Tempo de compilação A concatenação de strings ocorre quando ambos os operandos são constantes de tempo de compilação, como literal, variável final, etc. Isso significa que o resultado da expressão constante é calculado em tempo de compilação e posteriormente referenciado por String Pool. Para a questão dada, s1 refere-se a "OCAJP" (objeto String Pool). "OCAJP" + "" = "OCAJP". Como "OCAJP" já está disponível no conjunto de strings, o mesmo objeto é usado. Na execução, s1 e s2 referem-se ao mesmo objeto String e é por isso que s1 == s2 retorna verdadeiro. Observe que as strings calculadas pela concatenação no tempo de execução (se a expressão resultante não for uma expressão constante) são recém-criadas e, portanto, distintas. Para o trecho de código abaixo: String s1 = "OCAJP"; String s2 = s1 + ""; System.out.println (s1 == s2); A saída é falsa, pois s1 é uma variável e `s1 +" "` não é uma expressão constante, portanto, um novo objeto String não-pool é criado.
+
+---------------------------------------------------------------------------------------------------
+
+A classe A é declarada como pública e definida no pacote com.udayan.oca, não há problema em acessar a classe A fora do pacote com.udayan.oca. a classe B é definida no pacote com.udayan.oca.test, para estender da classe A, use a instrução de importação "import com.udayan.oca.A;" ou nome totalmente qualificado da classe com.udayan.oca.A. Nenhum problema com essa definição de classe também.Variable i1 é declarado public na classe A, portanto, linha 8 não causa qualquer erro de compilação. A variável i2 é declarada protegida, portanto, só pode ser acessada na subclasse usando herança, mas não usando a variável de referência do objeto. obj.i2 causa falha de compilação. A classe B herda a variável i2 da classe A, portanto dentro da classe B ela pode ser acessada usando this ou super. A linha 10 e a linha 11 não causam nenhum erro de compilação.
+
+----------------------------------------------------------------------------------------------------
+
+Esta questão está no operador ternário (? :). Se uma expressão tem múltiplos operadores ternários, então o número de? e: deve corresponder A expressão dada contém 2? e 1: e, portanto, erro de compilação.
+
+----------------------------------------------------------------------------------------------------
+
+Os itens 1 e 3 da ArrayList referem-se à mesma instância de String referida por s [s -> "Hello"] e o segundo item refere-se a outra instância de String.String é imutável, o que significa s.replace ("l", "L "); cria outra ocorrência de String "HeLLo", mas ainda se refere a "Hello" [s -> "Hello"]. [Hello, Hello, Hello] é impresso na saída.
+
+-----------------------------------------------------------------------------------------------------
+
+
+A primeira dimensão do array deve ser especificada no momento da declaração. novo int [] [8]; dá erro de compilação quando a primeira dimensão não é especificada.
+
+-----------------------------------------------------------------------------------------------------
+
+pausa; E continue; são usados ​​dentro de loop, portanto, nenhum erro de compilação. Na primeira iteração, "apple" é impresso no console. O cursor permanece na mesma linha que o método de impressão é usado e não imprime. Expressão booleana de if-block retorna false, o controle vai logo após if-block e acrescenta "salad!" para o console. pausa; A instrução pega o controle de loop, o método main termina e o programa termina com sucesso. Então, no console, você recebe "salada de maçã!"
+
+-----------------------------------------------------------------------------------------------------
 
 
 
