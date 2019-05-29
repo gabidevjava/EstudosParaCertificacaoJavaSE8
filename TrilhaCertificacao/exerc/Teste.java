@@ -896,6 +896,46 @@ Dentro aprimorado para loop, System.out.println (arr [i]); é usado em vez de Sy
 
 -------------------------------------------------------------------------------------------------------
 
+O método m está sobrecarregado. Qual método sobrecarregado para chamar é decidido em tempo de compilação. m (i) é marcado como m (int) como i é do tipo int e m ('5') é marcado como m (char) como '5' é literal de caractere.
+
+-------------------------------------------------------------------------------------------------------
+
+list.add (0, 'V'); => char 'V' é convertido em objeto Character e armazenado como o primeiro elemento na lista. lista -> [V]. list.add ('T'); => char 'T' é auto-boxed para o objeto Character e armazenado no final da lista. lista -> [V, T]. list.add (1, 'E'); => char 'E' é auto-empacotado para o objeto Character e inserido no índice 1 da lista, isso muda T para a direita. lista -> [V, E, T]. list.add (3, 'O'); => char 'O' é auto-boxed para o objeto Character e adicionado no índice 3 da lista. list -> [V, E, T, O]. list.contains ('O') => o 'O' é auto-empacotado para o objeto Caractere e, como a classe Caractere substitui o método equals (String), esta expressão retorna verdadeiro. O controle vai dentro de if-block e executa: list.remove ('O') ;. O método remove está sobrecarregado: remove (int) e remove (Object). char pode ser facilmente atribuído a int para que as tags do compilador removam o método (int). list.remove (valor <ASCCI de 'O'>); ASCCI valor de 'A' é 65 (isso todo mundo sabe) assim valor ASCII de 'O' será mais de 65. list.remove ('O') lança exceção de tempo de execução, como ele tenta remover um item do índice maior que 65 mas o índice permitido é de 0 a 3 apenas.
+
+----------------------------------------------------------------------------------------------------------
+
+O método main (args) é invocado recursivamente sem especificar nenhuma condição de saída, portanto, este código finalmente lança java.lang.StackOverflowError. StackOverflowError é uma subclasse do tipo Erro e não do tipo Exceção, portanto, não é tratado. O rastreamento de pilha é impresso no console e o programa termina abruptamente. O Java não permite capturar exceções específicas verificadas se elas não forem lançadas pelas instruções dentro do bloco try. catch (java.io.FileNotFoundException ex) {} irá causar erro de compilação neste caso como main (args); nunca jogará FileNotFoundException. Mas Java permite capturar o tipo de exceção, portanto, catch (exceção ex) {} não causa nenhum erro de compilação.
+
+------------------------------------------------------------------------------------------------------------
+
+date -> {2012-01-11}, período -> {P2M}, date.minus (período) -> {2011-11-11} [subtrair período de dois meses a partir de {2012-01-11}, mês é alterado para 11 e o ano é alterado para 2011]. formatter -> {MM-dd-yy}, quando date {2011-11-11} é formatador neste formato 11-11-11 é impresso no console.
+
+------------------------------------------------------------------------------------------------------------
+
+As classes A e B são declaradas públicas e dentro do mesmo pacote com.udayan.oca. O método print () da classe A foi corretamente substituído pelo método B. print () é público, portanto, não há problemas em acessá-lo em qualquer lugar. Vamos verificar o código dentro do método principal. Um obj1 = new A (); => obj1 refere-se a uma instância da classe A. B obj2 = (B) obj1; => obj1 é do tipo A e é atribuído a obj2 (tipo B), portanto, a conversão explícita é necessária. obj1 refere-se a uma instância da classe A, portanto, em tempo de execução, obj2 também se referirá a uma instância da classe A. O sub-tipo não pode referir-se a um objeto do tipo super em tempo de execução B obj2 = (B) obj1; lançará ClassCastException.
+
+-------------------------------------------------------------------------------------------------------------
+
+É um esquema pass-by-reference.Inicialmente, msg = "Feliz Ano Novo!" A chamada à mudança de método (Message) não modifica a propriedade msg do objeto passado, mas cria outro objeto Message e modifica a propriedade msg do novo objeto para "Boas Festas!" Assim, a instância da Mensagem referida por obj permanece inalterada.Hence na saída, você obtém: Feliz Ano Novo! Feliz Ano Novo!
+
+-------------------------------------------------------------------------------------------------------------
+
+ClassCastException estende RuntimeException (exceção não verificada), FileNotFoundException estende IOException, IOException estende Exception (exceção verificada), ExceptionInInitializerError é da família Error e é lançado por um bloco inicializador estático, RuntimeException e todas as suas subclasses são exceções não verificadas.
+
+-------------------------------------------------------------------------------------------------------------
+
+lista1 -> [A, D], lista2 -> [B, C], list1.addAll (1, lista2); é quase igual a list1.add (1, [B, C]); => Insere B no índice 1, C pega no índice 2 e D é movido para o índice 3. list1 -> [A, B, C, D]
+
+--------------------------------------------------------------------------------------------------------------
+
+A classe abstrata pode ter construtores e também é possível ter uma classe abstrata sem nenhum método abstrato. Portanto, não há problema com a classe Animal. Compilador Java adiciona super (); como a primeira instrução dentro do construtor, se a chamada para outro construtor usando este (...) ou super (...) não estiver disponível. Dentro da classe Animal Constructor, o compilador adiciona super (); => Animal (nome da string) {super (); this.name = nome; }, super () neste caso invoca o construtor no-arg da classe Object e, portanto, nenhum erro de compilação aqui. O compilador altera o construtor Dog (String) para: Dog (String breed) {super (); this.breed = raça; }. O construtor No-arg não está disponível na classe Animal e, como outro construtor é fornecido, o compilador java não adiciona um construtor padrão. Portanto, o construtor Dog (String) fornece um erro de compilação. Não há problema com o construtor Dog (String, String).
+
+----------------------------------------------------------------------------------------------------------------
+
+Primeiro você deve descobrir o motivo do erro de compilação. Os métodos declarados na interface Printable são implicitamente abstratos, sem problemas com a interface Printable. class Paper é declarado abstract e implementa Printable interface, ele sobrescreve o método setMargin () mas o método setOrientation () ainda é abstrato. Não há problemas com a classe de papel, pois é uma classe abstrata e pode ter 0 ou mais métodos abstratos. A classe NewsPaper é uma classe concreta e estende a classe Paper (que é abstrata). Portanto, a classe Papel deve substituir o método setOrientation () OU deve ser declarado como abstrato. Substituindo a linha 9 por 'public abstract void setOrientation ();' não é necessário e não resolverá o erro de compilação na classe NewsPaper. Substituir a Linha 7 por 'classe Implementos de papel imprimíveis {' causará falha na compilação da classe Paper, pois herda o método abstrato 'setOrientation'.
+
+-----------------------------------------------------------------------------------------------------------------
+
 
 
 
