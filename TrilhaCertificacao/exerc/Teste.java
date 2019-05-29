@@ -888,6 +888,9 @@ pausa; E continue; são usados ​​dentro de loop, portanto, nenhum erro de co
 
 -----------------------------------------------------------------------------------------------------
 
+Você deve imprimir o elemento no índice 0, 2 e 4, o que significa que o índice deve começar com 0 e a expressão de etapa deve incrementar o índice em 2. Portanto, int n = 0; n <arr.length; n + = 2 é a resposta correta.
+
+------------------------------------------------------------------------------------------------------
 
 
 
