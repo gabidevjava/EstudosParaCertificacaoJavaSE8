@@ -892,6 +892,11 @@ Você deve imprimir o elemento no índice 0, 2 e 4, o que significa que o índic
 
 ------------------------------------------------------------------------------------------------------
 
+Dentro aprimorado para loop, System.out.println (arr [i]); é usado em vez de System.out.println (i); Quando o loop é executado pela primeira vez, armazena o primeiro elemento da matriz, que é 2, mas a declaração System.out.println imprime arr [2], que é 0. O loop é executado dessa maneira e imprime 0 1 2 no console.
+
+-------------------------------------------------------------------------------------------------------
+
+
 
 
 
