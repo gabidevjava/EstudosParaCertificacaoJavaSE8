@@ -936,6 +936,75 @@ Primeiro você deve descobrir o motivo do erro de compilação. Os métodos decl
 
 -----------------------------------------------------------------------------------------------------------------
 
+O método equals declarado na classe Object tem a declaração: public boolean equals (Object). Geralmente, o método equals é usado para comparar instâncias diferentes da mesma classe, mas se você passar qualquer outro objeto, não haverá erro de compilação. O tipo de parâmetro é Object para aceitar qualquer objeto Java. str.equals (sb) => A classe String substitui o método equals (Object), mas como "sb" é do tipo StringBuilder, então isso retorna false. A classe StringBuilder não substitui o método equals (Object). Então, a versão do objeto é invocada, que usa o operador ==, portanto, sb.equals (str) retorna falso também. false: false é impresso no console.
+
+------------------------------------------------------------------------------------------------------------------
+
+A variável int pode ser facilmente atribuída ao tipo double, mas double [] e int [] não são compatíveis. Na verdade, ambos são irmãos e não podem ser atribuídos um ao outro, portanto, a Linha 3 causa falha na compilação.
+
+-------------------------------------------------------------------------------------------------------------------
+
+Compilador Java adiciona super (); como a primeira instrução dentro do construtor, se a chamada para outro construtor usando este (...) ou super (...) não estiver disponível. Compilador adiciona super (); como a primeira linha no construtor do OTG: OTG (int capacity, String type) {super (); } mas a classe PenDrive não possui um construtor no-arg e é por isso que o construtor do OTG fornece um erro de compilação. Para corrigir o erro de compilação, o construtor da classe pai deve ser chamado usando super (capacidade); Isso resolveria o erro de compilação. super (capacidade); só irá atribuir valor à propriedade da capacidade, para atribuir valor ao tipo outra declaração é necessária. this.type = type; deve ser a segunda declaração. Lembre-se: A chamada de construtor usando este (...) ou super (...) deve ser a primeira instrução dentro do construtor.
+
+--------------------------------------------------------------------------------------------------------------------
+
+Antes de responder isso, você deve saber que existem 5 objetos Student diferentes criados na memória (4 no momento da adição à lista e 1 no momento da remoção da lista). Isso significa que esses 5 objetos Student serão armazenados em endereços de memória diferentes. O método remove (Object) remove a primeira ocorrência do objeto correspondente e o método equals (Object) decide se 2 objetos são iguais ou não. O método equals (Object) definido na classe Object usa o operador == para verificar a igualdade e, nesse caso, os 5 objetos Student são armazenados em uma localização de memória diferente, portanto, não iguais. Nada é removido da lista de alunos, todos os 4 objetos Student são impressos no pedido de veiculação.
+
+---------------------------------------------------------------------------------------------------------------------
+
+System.out.println (str1 = str2) tem operador de atribuição (=) e não operador de igualdade (==). Após a atribuição, str1 refere-se a "CoRe" e System.out.println imprime "CoRe" no console.
+
+---------------------------------------------------------------------------------------------------------------------
+
+LocalDateTime armazena as partes de data e hora. LocalDateTime.now (); recupera a data e hora atuais do relógio do sistema. obj.getSecond () pode retornar qualquer valor entre 0 e 59.
+
+--------------------------------------------------------------------------------------------------------------------
+
+Objetos LocalDate podem ser criados usando análise de método estático e de. O método removeIf (Predicate) foi incluído como um método padrão na interface Collection no JDK 8 e remove todos os elementos dessa coleção que satisfazem o predicado fornecido. O método de teste do predicado retorna true para todos os objetos LocalDate com ano menor que 2000. Portanto, todos os objetos LocalDate com valor de ano menor que 2000 são removidos da lista. Os objetos LocalDate restantes são impressos em seu pedido de veiculação.
+
+--------------------------------------------------------------------------------------------------------------------
+
+O método LocalDate.of (...) primeiro valida o ano, depois o mês e finalmente o dia do mês. Setembro não pode ter 31 dias, então o método LocalDate.of (...) lança uma instância da classe java.time.DateTimeException.
+
+---------------------------------------------------------------------------------------------------------------------
+
+DICA: Primeiro verifique se os membros estão acessíveis ou não. Todos os códigos estão no mesmo arquivo Test.java, e Point class e variable x, y são declarados com o modificador default, portanto, estes podem ser acessados ​​dentro do mesmo pacote. O Teste de Classe pertence ao mesmo pacote, portanto, não há problemas em acessar a classe Point e as variáveis ​​de instância da classe Point.
+Faça uso de caneta e papel para desenhar os diagramas de memória (pilha e pilha). Será muito rápido para alcançar o resultado. Ponto p1 = new Point (); significa p1.x = 0 e p1.y = 0 como variável de instância são inicializados para os respectivos zeros. p1.x = 10; significa substituir 0 por 10 em p1.x, p1.y = 20; significa substituir 0 por 20 em p1.y, ponto p2 = novo ponto (); significa p2.x = 0 e p2.y = 0 como variável de instância são inicializados para os respectivos zeros. p2.assign (p1.x, p1.y); invoca o método assign, variável de parâmetro x = 10 e y = 20. Como assign é invocado na variável de referência p2, portanto, this e p2 referem-se ao mesmo objeto Point. x = this.x; significa atribuir 0 à variável de parâmetro x, sem alterações neste.y, o que significa que p2.x não é alterado. this.y = y; significa atribuir 20 a this.y, o que significa que p2.y agora é 20So, depois que o método assign é invocado e o controle retorna ao método main: p1.x = 10, p1.y = 20, p2.x = 0 e p2.y = 20. A saída é: Point (10, 20); Point (0, 20)
+
+-------------------------------------------------------------------------------------------------------------------
+
+Period.of (0, 0, 0); é equivalente a Period.ZERO. O período ZERO é exibido como P0D, exceto que os componentes do período (ano, mês, dia) com valores 0 são ignorados. O resultado de toString () começa com P, e para um ano diferente de zero, Y é anexado; para um mês diferente de zero, M é anexado; e para dia diferente de zero, D é anexado. P, Y, M e D estão em maiúsculas. NOTA: O método Period.parse (CharSequence) aceita o parâmetro String no formato "PnYnMnD", aqui P, Y, M e D podem estar em qualquer caso.
+
+-------------------------------------------------------------------------------------------------------------------
+
+isAfter e isBefore o método pode ser interpretado como: 1 de janeiro de 2018 vem depois de 25 de dezembro de 2018? Não, falso. 1º de janeiro de 2018 vem antes de 25 de dezembro de 2018? Sim, verdade.
+
+-------------------------------------------------------------------------------------------------------------------
+
+switch pode aceitar tipos primitivos: byte, short, int, char; tipos de wrapper: Byte, Short, Integer, Character; String e enums. Nesse caso, todos são valores válidos, mas apenas 3 executam "case 7:". case é comparar o valor inteiro 7. NOTA: caractere sete, '7' é diferente do valor inteiro sete, 7. Então "char var = '7';" e "Character var = '7';" imprimirá DEFAULT no console.
+
+--------------------------------------------------------------------------------------------------------------------
+
+`new StringBuilder (100);` cria uma instância StringBuilder, cujo comprimento da matriz char interna é 100, mas o método length () do objeto StringBuilder retorna o número de caracteres armazenados na matriz interna e neste caso é 0. Então, `sb .length () `retorna 0. sb.toString () é a representação String da ocorrência de StringBuilder e neste caso, como não há caracteres dentro do objeto StringBuilder, portanto sb.toString () retorna uma String vazia" ", então` sb .toString (). length () `também retorna 0. A saída é 0: 0.
+
+---------------------------------------------------------------------------------------------------------------------
+
+Primeiro, adicione parênteses (parênteses redondos) à expressão dada: -a ++. Existem 2 operadores envolvidos. unário menos e operador Postfix. Vamos começar com expressão e valor de a.-a ++; [a = 100] - (a ++); [a = 100] O operador do postfix tem precedência mais alta que o operador unário. - (100); [a = 101] Use o valor de a (100) na expressão e depois disso aumente o valor de a para 101. -100; [a = 101] -100 é impresso no console.
+
+----------------------------------------------------------------------------------------------------------------------
+
+As classes String e StringBuilder substituem o método toString (), que imprime o texto armazenado nessas classes. A classe SpecialString não substitui o método toString () e, portanto, quando a instância de SpecialString é impressa no console, você obtém: <nome totalmente qualificado da classe SpecialString> @ <representação hexadecimal do código hash>.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+O método remove da interface List está sobrecarregado: remove (int) e remove (Object). O método indexOf aceita o argumento do tipo Object, neste caso list.indexOf (0) => 0 é auto-boxed para o objeto Integer, portanto nenhum problema com o código indexOf. list.indexOf (0) retorna 2 (índice no qual 0 é armazenado na lista). Então list.remove (list.indexOf (0)); é convertido em list.remove (2); remove (int) a versão é correspondida, é uma correspondência direta para que o compilador não faça o auto-boxing neste caso. list.remove (2) remove o elemento no índice 2, que é 0. Assim, na saída, você obtém [2, 1].
+
+------------------------------------------------------------------------------------------------------------------------
+
+Este é um exemplo de esquema de passagem por valor. x do método checkAndIncrement contém a cópia da variável x definida no método main. Portanto, as alterações feitas em x no método checkAndIncrement não são refletidas na variável x de main. x de main permanece como 1 dentro do código principal não está alterando seu valor. Toda vez que o método checkAndIncrement é invocado com o valor do argumento 1, então true é retornado sempre e, portanto, enquanto o loop é executado indefinidamente.
+
+-------------------------------------------------------------------------------------------------------------------
+
 
 
 
