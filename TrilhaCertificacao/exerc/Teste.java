@@ -1005,7 +1005,41 @@ Este é um exemplo de esquema de passagem por valor. x do método checkAndIncrem
 
 -------------------------------------------------------------------------------------------------------------------
 
+Esta questão verifica seu conhecimento de esquemas de passagem por valor e de passagem por referência. Nas declarações abaixo: estudante <main> significa aluno dentro do método principal. Na execução do método main: student <main> -> {"James", 25}, marca <main> = 25. Na execução do método de revisão: stud <review> -> {"James", 25} (mesmo objeto referido pelo aluno <main>), marca <review> = 25 (esta marca é diferente das marcas definidas no método main). marca <review> = 35 e stud.marks = 60. Então, no final do método de revisão: stud <review> -> {"James", 60}, marca <review> = 35. O controle retorna ao método main: student <main> -> {"James", 60}, marcas <main> = 25. As alterações feitas na variável de referência são visíveis no método principal, mas as alterações feitas na variável primitiva não são refletidas no método main.
 
+---------------------------------------------------------------------------------------------------------------------
+
+A exceção ConcurrentModificationException pode ser emitida para a seguinte condição: 1. A coleta está sendo iterada usando o Iterator / ListIterator ou usando o loop for-each. E 2. Execução dos métodos Iterator.next (), Iterator.remove (), ListIterator.previous (), ListIterator.set (E) & ListIterator.add (E). Esses métodos podem lançar java.util.ConcurrentModificationException caso a Coleção tenha sido modificada por outros meios além do próprio iterador, como Collection.add (E) ou Collection.remove (Object) ou List.remove (int) etc. código, lista 'dryFruits' está sendo iterada usando o Iterator <>. O método hasNext () do Iterator tem a seguinte implementação: public boolean hasNext () {return cursor! = size; } Onde cursor é o índice do próximo elemento a retornar e inicialmente é 0. 1ª Iteração: cursor = 0, tamanho = 4, hasNext () retorna verdadeiro. iterator.next () incrementa o cursor em 1 e retorna "Walnut". 2ª Iteração: cursor = 1, tamanho = 4, hasNext () retorna verdadeiro. iterator.next () incrementa o cursor em 1 e retorna "Apricot". Como "Apricot" começa com "A", portanto, dryFruits.remove (dryFruit) remove "Apricot" da lista e, portanto, reduz o tamanho da lista em 1, o tamanho torna-se 3. 3rd Iteration: cursor = 2, size = 3, hasNext ( ) retorna verdadeiro. O método iterator.next () lança java.util.ConcurrentModificationException. Se você quiser remover os itens de ArrayList, enquanto estiver usando Iterator ou ListIterator, use o método Iterator.remove () ou ListIterator.remove () e o método NOT List.remove (...). Usar o método List.remove (...) ao iterar a lista (usando o Iterator / ListIterator ou for-each) pode lançar java.util.ConcurrentModificationException.
+
+---------------------------------------------------------------------------------------------------------------------
+
+substring (int beginIndex, int endIndex) é usado para extrair a substring. A subseqüência começa em "beginIndex" e se estende até "endIndex - 1". As informações do código do país são armazenadas no índice 4 e 5, portanto, o método de substring correto para extrair o código do país é: swiftCode.substring (4, 6);
+
+-------------------------------------------------------------------------------------------------------------------------
+
+LocalDate é uma classe final, portanto, não pode ser estendida.
+
+----------------------------------------------------------------------------------------------------------------------
+
+O método 'append' está sobrecarregado na classe StringBuilder: append (String), append (StringBuffer) e append (char []) etc. Nesse caso, o compilador fica confuso sobre qual método `append (null)` pode ser marcado porque String, StringBuffer e char [] não estão relacionados entre si na herança multinível. Portanto, o `sb.append (null)` causa um erro de compilação.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Vamos supor: new ArrayList <> () é armazenado em [15EE00]. o novo contador (10) é armazenado em [25AF06]. original contém endereço de memória do objeto contador acima. [15EE00] -> {25AF06}. Agora original.clone () criará um novo objeto de lista de arrays, suponha em [45BA12] e então copiará o conteúdo do objeto ArrayList armazenado em [15EE00]. Então, clonado contém endereço de memória do mesmo objeto contador. [45BA12] -> {25AF06} Nesse caso, original! = Clonado, mas original.get (0) == cloned.get (0). Isso significa que ambas as listas de arrays são criadas em locais de memória diferentes, mas se referem ao mesmo objeto Counter. cloned.get (0) retorna o objeto contador armazenado em [25AF06] e .count = 5 significa que [25AF06] se refere a [Objeto Contador (5)]. System.out.println (original); Imprime o elemento de ArrayList original, que é: {25AF06} e o método toString () imprime: Counter-5 como o objeto Counter referido por [25AF06] é [Counter object (5)].
+
+-----------------------------------------------------------------------------------------------------------------------
+
+LocalTime.MIN -> {00:00}, LocalTime.MAX -> {23: 59: 59.999999999}, LocalTime.MIDNIGHT -> {00:00}, LocalTime.NOON -> {12:00}. O método date.atTime (LocalTime) cria uma instância LocalDateTime combinando partes de data e hora. O método toString () da classe LocalDateTime imprime as partes de data e hora separadas por T em maiúsculas.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+passportNo 'deve ser somente leitura para qualquer outra classe. Isso significa tornar o' passportNo 'privado e fornecer o método getter público. Não forneça setter público, pois 'passportNo' será propriedade de leitura / gravação. Se o passportNo for declarado com o escopo padrão, outras classes no mesmo pacote poderão acessar o passportNo para a operação de leitura / gravação.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Lista não pode aceitar primitivos, pode aceitar apenas objetos. Portanto, quando 100 e 200 são adicionados à lista, o recurso de autoincrustação os converte em objetos de invólucro do tipo Integer. Então, 4 itens são adicionados à lista. Pode-se esperar o mesmo comportamento com o método remove, assim, 100 será auto-empacotado para o objeto Integer. Mas o método remove está sobrecarregado na interface List: remove (int) => Remove o elemento da posição especificada nesta lista e remove (Object) => Remove a primeira ocorrência do elemento especificado da lista. Como a versão remove (int) está disponível, o que combina perfeitamente com a remoção de chamada (100); portanto, o compilador não faz o auto-boxing neste caso. Mas no tempo de execução remove (100) tenta remover o elemento no índice 100 e isso lança IndexOutOfBoundsException.
+
+------------------------------------------------------------------------------------------------------------------------
 
 
 
