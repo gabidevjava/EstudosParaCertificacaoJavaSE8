@@ -6,6 +6,7 @@ import java.time.LocalTime;
 import java.time.Month;
 import java.time.MonthDay;
 import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 
 public class TesteData8 {
 	
@@ -42,13 +43,21 @@ public class TesteData8 {
 		//System.out.println(day1.isAfter(day2));
 		//System.out.println(day1.isEqual(day2));
 		
-		LocalDate d = LocalDate.of(2018, 4, 21);
+		/*LocalDate d = LocalDate.of(2018, 4, 21);
 		
 		System.out.println(d);
 		
 		LocalDate withMonth2 = d.withMonth(6);
 		
-		System.out.println(withMonth2);
+		System.out.println(withMonth2);*/
+		
+		LocalDateTime agora = LocalDateTime.now();
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		System.out.println(formatter.format(agora));
+		System.out.println(agora.format(formatter));		
+		
+				
+				
 	}
 
 }
