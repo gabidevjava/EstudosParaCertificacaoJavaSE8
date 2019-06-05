@@ -924,6 +924,8 @@ ClassCastException estende RuntimeException (exceção não verificada), FileNot
 
 -------------------------------------------------------------------------------------------------------------
 
+minusYears, minusMonths, minusWeeks, minusDays métodos aceitam parâmetro longo para que você possa passar valor positivo ou negativo. Se o valor positivo for passado, esse valor especificado é subtraído e, se o valor negativo for passado, o valor especificado será adicionado. Eu acho que você ainda se lembra: menos menos é mais. Da mesma forma, mais métodos Years, plusMonths, plusWeeks, plusDays funcionam da mesma maneira. Se o valor positivo for passado, o valor especificado será adicionado e, se o valor negativo for passado, o valor especificado será subtraído.
+
 lista1 -> [A, D], lista2 -> [B, C], list1.addAll (1, lista2); é quase igual a list1.add (1, [B, C]); => Insere B no índice 1, C pega no índice 2 e D é movido para o índice 3. list1 -> [A, B, C, D]
 
 --------------------------------------------------------------------------------------------------------------
