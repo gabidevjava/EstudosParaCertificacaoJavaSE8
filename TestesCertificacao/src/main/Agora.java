@@ -1,31 +1,24 @@
 package main;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
-abstract class Super {
-    public abstract void m1() throws IOException;
-}
-
-class Sub extends Super {
-    @Override
-    public void m1() throws IOException {
-        throw new FileNotFoundException();
-    }
-}
+import java.util.ArrayList;
+import java.util.List;
 
 public class Agora {
 	
 	public static void main(String[] args) {
-		 Super s = new Sub();
-		 
-         try {
-             s.m1();
-         } catch (IOException e) {
-             System.out.print("M");
-         } finally {
-             System.out.print("N");
-         }
+		 String fruit = "mango";
+         switch (fruit) {
+             default:
+                 System.out.println("ANY FRUIT WILL DO");
+             case "Apple":
+                 System.out.println("APPLE");
+             case "Mango":
+                 System.out.println("MANGO");
+             case "Banana":
+                 System.out.println("BANANA");
+                 break;
+            	
+        }
 	}
 	
 }
