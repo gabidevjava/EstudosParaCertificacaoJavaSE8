@@ -1,33 +1,31 @@
 package main;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.function.Predicate;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+abstract class Super {
+    public abstract void m1() throws IOException;
+}
+
+class Sub extends Super {
+    @Override
+    public void m1() throws IOException {
+        throw new FileNotFoundException();
+    }
+}
 
 public class Agora {
 	
 	public static void main(String[] args) {
-		String [] arr = {"A", "ab", "bab", "Aa", "bb", "baba", "aba", "Abab"};
-		
-		String beijo = "beijo";
-		boolean equals = beijo.toUpperCase().substring(0,1).equals("b");
-		System.out.println(beijo);
-		System.out.println(equals);
-		System.out.println("-----------------------------------------------");
+		 Super s = new Sub();
 		 
-        Predicate<String> p = s -> s.toUpperCase().substring(0,1).equals("A");
-
-        processStringArray(arr, p);
-     
+         try {
+             s.m1();
+         } catch (IOException e) {
+             System.out.print("M");
+         } finally {
+             System.out.print("N");
+         }
 	}
-	
-    private static void processStringArray(String [] arr, 
-            Predicate<String> predicate) {
-			for(String str : arr) {
-			if(predicate.test(str)) {
-			System.out.println(str);
-			}
-			}
-			}
 	
 }
