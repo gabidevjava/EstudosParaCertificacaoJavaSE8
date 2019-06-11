@@ -1,16 +1,19 @@
 package main;
 
-import java.time.LocalDate;
-import java.time.Period;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Agora {
 
 	public static void main(String[] args) throws Exception {
-		LocalDate date = LocalDate.parse("4000-01-01");
-		System.out.println(date);
-        Period period = Period.ofYears(-3000);
-        System.out.println(period);
-        //System.out.println(date.plus(period));
-		
+		List<String> list = new ArrayList<>();
+        list.add("X");
+        list.add("Y");
+        list.add("X");
+        list.add("Y");
+        list.add("Z");
+        list.remove(new String("Y"));
+        System.out.println(list);
 	}
+
 }
