@@ -1,24 +1,16 @@
 package main;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.time.LocalDate;
+import java.time.Period;
 
 public class Agora {
-	
-	public static void main(String[] args) {
-		 String fruit = "mango";
-         switch (fruit) {
-             default:
-                 System.out.println("ANY FRUIT WILL DO");
-             case "Apple":
-                 System.out.println("APPLE");
-             case "Mango":
-                 System.out.println("MANGO");
-             case "Banana":
-                 System.out.println("BANANA");
-                 break;
-            	
-        }
+
+	public static void main(String[] args) throws Exception {
+		LocalDate date = LocalDate.parse("4000-01-01");
+		System.out.println(date);
+        Period period = Period.ofYears(-3000);
+        System.out.println(period);
+        //System.out.println(date.plus(period));
+		
 	}
-	
 }
