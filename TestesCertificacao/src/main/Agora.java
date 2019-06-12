@@ -25,7 +25,6 @@ public class Agora {
 				if (arr[i][j].equals("2")) {
 					break;
 				}
-
 			}
 		}
 	}
